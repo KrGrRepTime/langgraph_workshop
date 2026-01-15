@@ -102,6 +102,15 @@ By the end of this workshop, you will be able to:
    pip install langgraph langchain-core langchain-openai google-search-results langchain-google-genai langchain-community langchain-google-community python-dotenv
    ```
 
+5. **Verify your setup** (recommended):
+
+   Run the validation script to check if everything is configured correctly:
+   ```bash
+   python validate_setup.py
+   ```
+   
+   This will check your Python version, dependencies, and environment configuration.
+
 5. **Create environment file**:
 
    Create a `.env` file by copying the template:
