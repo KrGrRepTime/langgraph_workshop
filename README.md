@@ -11,6 +11,35 @@ This workshop covers fundamental concepts for building AI agents using LangGraph
 - Tool integration
 - Agent loops and workflows
 
+## Learning Objectives
+
+By the end of this workshop, you will be able to:
+- Build basic AI agents with LangGraph using single-node and multi-node workflows
+- Implement state management patterns with Pydantic models
+- Integrate external tools (web search, content fetching) into your agents
+- Create intelligent routing and decision-making agents with conditional edges
+- Implement advanced patterns including loops, streaming, and checkpoints
+- Deploy multi-agent systems with consensus mechanisms
+- Apply production-ready safety patterns (max iterations, error handling)
+
+## Time Estimates
+
+- **Setup & Prerequisites:** 30 minutes
+- **Workshop v1 (Basic):** 30 minutes - Single-node Q&A agent
+- **Workshop v2 (Enhanced):** 45 minutes - Multi-node with web search
+- **Workshop v3 (Complete):** 1 hour - Intelligent content enrichment
+- **Workshop v4 (Loops):** 2-3 hours - Advanced loop patterns and streaming
+- **Learner Exercise:** 1 hour - Hands-on practice
+- **Total Workshop Time:** 4-6 hours
+
+## System Requirements
+
+- **Python Version:** 3.10 or higher
+- **Operating System:** Windows, macOS, or Linux
+- **Disk Space:** ~500 MB (including dependencies)
+- **Internet Connection:** Required for API calls during workshop
+- **RAM:** 4GB minimum, 8GB recommended
+
 ## Prerequisites Setup
 
 ### I. Google Gemini API Key
@@ -65,11 +94,22 @@ This workshop covers fundamental concepts for building AI agents using LangGraph
 4. **Install required packages**:
 
    ```bash
+   pip install -r requirements.txt
+   ```
+   
+   Or install manually:
+   ```bash
    pip install langgraph langchain-core langchain-openai google-search-results langchain-google-genai langchain-community langchain-google-community python-dotenv
    ```
 
 5. **Create environment file**:
 
+   Create a `.env` file by copying the template:
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Or create manually:
    - On Windows:
      ```bash
      type nul > .env
@@ -109,9 +149,13 @@ MISTRAL_API_KEY=your_mistral_api_key_here
 
 ## Troubleshooting
 
-- **API Key Issues**: Double-check that your keys are correctly copied into the `.env` file
+- **API Key Issues**: Double-check that your keys are correctly copied into the `.env` file with no extra spaces
 - **Import Errors**: Ensure all packages are installed and your virtual environment is activated
-- **Rate Limits**: Be mindful of free tier limits for API calls
+- **Rate Limits**: Be mindful of free tier limits for API calls (100 searches/day for Google Custom Search)
+- **Python Version**: Ensure you're using Python 3.10 or higher with `python --version`
+- **Module Not Found**: Make sure you've activated your virtual environment before running notebooks
+
+For detailed troubleshooting, see the common issues and solutions in the workshop notebooks.
 
 ## Resources
 
@@ -122,6 +166,12 @@ MISTRAL_API_KEY=your_mistral_api_key_here
 
 ## Support
 
-If you encounter any issues during the workshop, please reach out to the instructor or check the documentation links above.
+If you encounter any issues during the workshop:
+1. Check the troubleshooting section above
+2. Review the documentation links below
+3. Reach out to the instructor during the workshop
+4. Open an issue in the repository for bugs or suggestions
+
+For a comprehensive project review and improvement recommendations, see [PROJECT_REVIEW.md](PROJECT_REVIEW.md) and [RECOMMENDATIONS.md](RECOMMENDATIONS.md).
 
 Happy coding! 🚀

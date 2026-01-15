@@ -1,0 +1,23 @@
+# LangGraph Workshop Dependencies
+# Python 3.10+ recommended
+
+# Core LangGraph and LangChain
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# LLM Providers
+langchain-openai>=0.2.0
+langchain-google-genai>=2.0.0
+langchain-google-community>=2.0.0
+
+# Search Integration
+google-search-results>=2.4.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Optional: Jupyter support
+jupyter>=1.0.0
+ipykernel>=6.0.0
